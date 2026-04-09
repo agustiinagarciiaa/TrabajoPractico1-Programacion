@@ -2,7 +2,7 @@ using System;
 
 namespace Programa1
 {
-    class program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -10,19 +10,19 @@ namespace Programa1
             Console.WriteLine("Sistema de login");
 
             Console.Write("Ingrese su nombre: ");
-            string nombre = Console.ReadLine();
+            string nombre = Console.ReadLine()!;
 
             Console.Write("Ingrese su apellido:");
-            string apellido = Console.ReadLine();
+            string apellido = Console.ReadLine()!;
 
             Console.Write("Ingresa tu edad: ");
-            string edadTexto = Console.ReadLine();
+            string edadTexto = Console.ReadLine()!;
             int edad = int.Parse(edadTexto); 
 
-            Console.Write("promedio de materias aprobadas");
-            double promedio  = double.Parse(Console.ReadLine());
+            Console.Write("promedio de materias aprobadas: ");
+            double promedio  = double.Parse(Console.ReadLine()!);
 
-            // 4. Mostrar los resultados procesados
+            // 4. Mostrar los resultados procesadosAG
             Console.WriteLine("\n Cuenta Registrada");
             Console.WriteLine("Nombre: " + nombre);
             Console.WriteLine("Apellido:"+ apellido);
@@ -36,21 +36,21 @@ namespace Programa1
             Console.WriteLine("\n---Registro de Alumno---");
 
                 Console.Write("Ingrese su nombre: ");
-                string nombreAlumno = Console.ReadLine();
+                string nombreAlumno = Console.ReadLine()!;
     
                 Console.Write("Ingrese su apellido:");
-                string apellidoAlumno = Console.ReadLine();
+                string apellidoAlumno = Console.ReadLine()!;
     
                 Console.Write("Ingresa tu edad: ");
-                string edadTextoAlumno = Console.ReadLine();
+                string edadTextoAlumno = Console.ReadLine()!;
                 int edadAlumno = int.Parse(edadTextoAlumno); 
 
                 Console.Write("Ingrese su numero de legajo: ");
-                string legajoTextoAlumno = Console.ReadLine();
+                string legajoTextoAlumno = Console.ReadLine()!;
                 int legajoAlumno = int.Parse(legajoTextoAlumno);
     
                 Console.Write("promedio de materias aprobadas");
-                double promedioAlumno  = double.Parse(Console.ReadLine());
+                double promedioAlumno  = double.Parse(Console.ReadLine()!);
 
                 // Mostrar los resultados
                 Console.WriteLine("\n Cuenta Registrada");
@@ -68,17 +68,17 @@ namespace Programa1
                 Console.WriteLine("\n---Registro de Empleado---");
 
                 Console.Write("Ingrese su nombre: ");
-                string nombreEmpleado = Console.ReadLine();
+                string nombreEmpleado = Console.ReadLine()!;
 
                 Console.Write("Ingrese su apellido:");
-                string apellidoEmpleado = Console.ReadLine();
+                string apellidoEmpleado = Console.ReadLine()!;
 
                 Console.Write("Ingresa tu sueldo: ");
-                string sueldoTextoEmpleado = Console.ReadLine();
+                string sueldoTextoEmpleado = Console.ReadLine()!;
                 int sueldoEmpleado = int.Parse(sueldoTextoEmpleado);
 
                 Console.Write("Ingrese tu puesto de trabajo: ");
-                string puestoEmpleado = Console.ReadLine();
+                string puestoEmpleado = Console.ReadLine()!;
 
                 // Mostrar los resultados
                 Console.WriteLine("\n Cuenta Registrada");
@@ -95,24 +95,24 @@ namespace Programa1
                     Console.WriteLine("\n---Registro de Turnos Médicos---");
 
                     Console.Write("Ingrese su nombre: ");
-                    string nombrePaciente = Console.ReadLine();
+                    string nombrePaciente = Console.ReadLine()!;
 
                     Console.Write("Ingrese su apellido:");
-                    string apellidoPaciente = Console.ReadLine();
+                    string apellidoPaciente = Console.ReadLine()!;
 
                     Console.Write("Ingresa tu edad: ");
-                    string edadTextoPaciente = Console.ReadLine();
+                    string edadTextoPaciente = Console.ReadLine()!;
                     int edadPaciente = int.Parse(edadTextoPaciente);
 
                     Console.Write("Ingrese su número de teléfono: ");
-                    string telefonoPaciente = Console.ReadLine();
+                    string telefonoPaciente = Console.ReadLine()!;
                     int telefonoNumerico = int.Parse(telefonoPaciente);
 
                     Console.Write("Ingrese medico a atender: ");
-                    string medicoPaciente = Console.ReadLine();
+                    string medicoPaciente = Console.ReadLine()!;
 
                     Console.Write("Ingrese fecha del turno: ");
-                    string fechaPaciente = Console.ReadLine();
+                    string fechaPaciente = Console.ReadLine()!;
                     DateTime fechaTurno = DateTime.Parse(fechaPaciente);
 
                     // Mostrar los resultados
@@ -131,23 +131,23 @@ namespace Programa1
                     Console.WriteLine("\n---Reserva de Hotel---");
 
                     Console.Write("Ingrese su nombre: ");
-                    string nombreHuesped = Console.ReadLine();
+                    string nombreHuesped = Console.ReadLine()!;
 
                     Console.Write("Ingrese su apellido:");
-                    string apellidoHuesped = Console.ReadLine();
+                    string apellidoHuesped = Console.ReadLine()!;
 
                     Console.Write("Ingresa tu DNI: ");
-                    string dniHuesped = Console.ReadLine();
+                    string dniHuesped = Console.ReadLine()!;
                     int DNI = int.Parse(dniHuesped);
 
                     Console.Write("Ingrese su reservacion en el hotel:");
-                    string reservacionHuesped = Console.ReadLine();
+                    string reservacionHuesped = Console.ReadLine()!;
 
                     Console.Write("Ingrese fecha de entrada: ");
-                    string fechaEntradaHuesped = Console.ReadLine();
+                    string fechaEntradaHuesped = Console.ReadLine()!;
 
                     Console.Write("Ingrese fecha de salida: ");
-                    string fechaSalidaHuesped = Console.ReadLine();
+                    string fechaSalidaHuesped = Console.ReadLine()!;
 
                     // Mostrar los resultados
                     Console.WriteLine("\n Cuenta Registrada");
@@ -160,8 +160,6 @@ namespace Programa1
 
                     Console.WriteLine("\nPresiona ENTER para salir.");
                     Console.ReadLine();
-
-                    
 
         }
     }

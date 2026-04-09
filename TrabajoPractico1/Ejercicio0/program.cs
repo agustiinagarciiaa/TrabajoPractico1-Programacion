@@ -2,9 +2,9 @@ using System;
 
 namespace Program0
 {
-    class program
+    class Program
     {
-        static void main(string[] args)
+        static void Main(string[] args)
         {
             //Ejercicio 1
              Console.WriteLine("Hello, World!");
